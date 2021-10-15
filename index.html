@@ -357,19 +357,83 @@
             </div>
             <div class="footer-form">
                 <p class="form-title">Подпишитесь на рассылку</p>
-                <form action="" class="mail-form">
-                    <input type="email" name="mail-footer" placeholder="E-mail" class="footer-input">
+                <form action="#" class="mail-form">
+                    <label for="footer-input">
+                        <input type="email" name="mail" id="footer-input" placeholder="E-mail" class="footer-input">
+                    </label>
                     <button type="submit" class="form-btn">Подписаться<svg class="send-icon"><use href="./imeg/symbol-defs.svg#icon-icon-send"></use></svg></button>
                 </form>
             </div>
         </div>      
     </footer>
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close><svg class="close-icon"><use href="./imeg/symbol-defs.svg#icon-closex"></use></svg></button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#" class="modal-form">
+                <div class="form-filed">
+                    <label for="user-name" class="modal-lable">Имя</label>
+                    <span class="input-wrapper">
+                        <svg class="input-icon">
+                            <use href="./imeg/symbol-defs.svg#icon-name"></use>
+                        </svg> 
+                        <input type="text" 
+                            name="user-name" 
+                            id="user-name"
+                            class="modal-input">
+                    </span>
+                </div>
+                <div class="form-filed">
+                    <label for="user-tel" class="modal-lable">Телефон</label>
+                    <span class="input-wrapper">
+                        <input type="tel" 
+                            name="user-tel" 
+                            id="user-tel" 
+                            class="modal-input">
+                        <svg class="input-icon">
+                            <use href="./imeg/symbol-defs.svg#icon-tell"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-filed">
+                    <label for="user-mail" class="modal-lable">Почта</label>
+                    <span class="input-wrapper">
+                        <input type="email" 
+                            name="user-mail" 
+                            id="user-mail" 
+                            class="modal-input">
+                        <svg class="input-icon">
+                            <use href="./imeg/symbol-defs.svg#icon-post"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-filed">
+                    <label for="user-coment" class="modal-lable">Комментарий</label>
+                    <textarea name="user-coment"  
+                        id="user-coment" 
+                        placeholder="Введите текст" 
+                        class="modal-textarea"></textarea>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" 
+                        name="agree" 
+                        id="modal-checkbox"
+                        class="modal-checkbox visually-hidden">
+                    <label for="modal-checkbox" class="label-checkbox"> 
+                        <span class="check-active">
+                            <svg class="check-icon">
+                            <use href="./imeg/symbol-defs.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю &#160;
+                        <a href="" class="checkbox-link link">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="form-btn modal-btn">Отправить</button>
+            </form>
         </div>
     </div> 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
