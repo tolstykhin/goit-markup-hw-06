@@ -792,13 +792,17 @@ body {
   margin-bottom: 10px;
 }
 .form-filed:hover .modal-input,
-.form-filed:focus .modal-input,
-.form-filed:hover .modal-textarea,
-.form-filed:focus .modal-textarea {
-  border: 1px solid var(--accent-color);
+.form-filed:hover .modal-textarea {
+  border-color: var(--accent-color);
 }
-.form-filed:hover .input-icon,
-.form-filed:focus .input-icon {
+.form-filed:hover .input-icon {
+  fill: var(--accent-color);
+}
+.modal-input:focus,
+.modal-textarea:focus {
+  border-color: var(--accent-color);
+}
+.modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
 .modal-lable {
@@ -850,6 +854,7 @@ body {
   padding: 12px 16px;
   resize: none;
   cursor: pointer;
+  outline: none;
 
   transition: border-color var(--transform-time) var(--transform-function);
 }
