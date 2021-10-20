@@ -580,7 +580,6 @@ body {
 }
 .footer-address {
   margin-right: 70px;
-  width: 231px;
 }
 .footer-logo {
   display: block;
@@ -592,7 +591,7 @@ body {
   line-height: 1.19;
   color: var(--white-color);
 }
-.footer-address {
+.footer-address-data {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -640,7 +639,6 @@ body {
 }
 .footer-form {
   margin-left: 93px;
-  width: 570px;
 }
 .form-title {
   margin-bottom: 20px;
@@ -791,13 +789,6 @@ body {
 .form-filed {
   margin-bottom: 10px;
 }
-.form-filed:hover .modal-input,
-.form-filed:hover .modal-textarea {
-  border-color: var(--accent-color);
-}
-.form-filed:hover .input-icon {
-  fill: var(--accent-color);
-}
 .modal-input:focus,
 .modal-textarea:focus {
   border-color: var(--accent-color);
@@ -843,6 +834,9 @@ body {
   height: 18px;
 
   transition: fill var(--transform-time) var(--transform-function);
+}
+.coment-form {
+  margin-bottom: 0;
 }
 .modal-textarea {
   display: block;
